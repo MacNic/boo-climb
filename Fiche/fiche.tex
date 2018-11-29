@@ -1,0 +1,63 @@
+\documentclass[french]{article}
+\usepackage{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{listingsutf8}
+
+\title{Boo Climb}
+\author{CoderDojo Ans}
+\date{Décembre 2018}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{
+	style=mystyle, 
+	inputencoding=utf8/latin9
+}
+
+\begin{document}
+
+\begin{titlepage}
+	\maketitle
+\end{titlepage}
+
+\tableofcontents{}
+\newpage
+
+\section{Mise en place de l'environnement}
+
+\begin{abstract}
+	Dans cette section, nous allons mettre en place l'environnement et le décor du jeu.
+\end{abstract}
+	
+\subsection{Le canevas de départ}	
+
+\lstinputlisting[language=Python]{Step1.py}
+
+	
+\end{document}
+	
