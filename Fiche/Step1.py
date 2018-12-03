@@ -6,34 +6,25 @@ TITLE   = 'Boo climb'
 WIDTH   = 1366
 HEIGHT  = 768
 
-# Description
-#   Cette function est appelée par le moteur
-#   pygame zero pour mettre à jour les paramètres
-#   des différents objets qui composent le jeu a une
-#   fréquence d'environ 50 ou 60 fois par secondes
-#
-# Paramètres
-#   Aucun
-#
-# Retourne
-#   Rien
-#        
+# Met à jour les objects        
 def update() :
     return
     
-# Description
-#   Cette fonction est appelée par le moteur
-#   pygame zero lorsqu'il détecte que l'interface
-#   a besoin d'être redessinée
-#
-# Paramètres
-#   Aucun
-#
-# Retourne
-#   Rien
-#            
+# Dessine les objects         
 def draw():
+     
+    screen.blit('sky', (0, 0))
+    tree.draw()
+    
     return 
+
+####################
+## Initialisation ##
+####################
+
+# On créé et on positionne l'arbre
+tree     = Actor('tree', anchor=('left', 'top'))
+tree.pos = ((WIDTH - tree.width) / 2, 0)
     
 # Si vous utilisez mu editor, commentez
 # la ligne 'pgzrun.go()'
